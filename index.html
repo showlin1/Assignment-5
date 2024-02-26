@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticket</title>
+    <!-- Daisy Ui to Website -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body class="font-raleway font-inter">
+    <header class="mr-24 ml-24 mb-24">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li> <a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl font-bold">Bus Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li> <a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn text-[#1DD100] w-24"><span>Bus</span><img src="images/bus-icon.png" alt=""></a>
+                </div>
+            </div>
+        </nav>
+        <div class="hero min-h-screen rounded-3xl" style="background-image: url(images/banner.png);">
+            <div class="hero-overlay bg-opacity-10"></div>
+            <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                    <h1 class="mb-5 text-4xl font-bold">End-to-End Travel with <span class="text-[#1DD100]">Desh
+                            Paribahan</span></h1>
+                    <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The
+                        integrated testing features allow for a streamlined .</p>
+                    <button class="btn border-redious-5 bg-[#1DD100]">Buy Tickets</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Offer section -->
+        <section class="text-center font-raleway font-inter mr-24 ml-24 mb-24">
+            <h1 class="mb-10 text-3xl font-bold">Best offers for you</h1>
+            <div class="flex gap-6 mb-10">
+                <div class="flex">
+                    <div class=" bg-[#FFBF0F]  rounded-l-3xl px-12 py-14"><span class="text-2xl font-bold">15%
+                            OFF</span> <br>
+                        <span class="font-bold">on your next purchase</span> <br>
+                        <span> use by January 2024</span>
+                    </div>
+                    <img class="bg-[#FFBF0F]" src="images/cupon-devider.png" alt="">
+                    <div class=" bg-[#FFBF0F] text-center rounded-r-3xl px-8 py-16"><span
+                            class="text-2xl font-bold">NEW15</span> <br> <span>Coupon Code</span> </div>
+                </div>
+                <div class="flex">
+                    <div class="bg-[#F78C9C] text-center rounded-l-3xl px-12 py-14"><span
+                            class="text-2xl font-bold mb-4">20% OFF</span> <br>
+                        <span class="font-bold mb-4">on your next purchase</span> <br>
+                        <span>use by January 2024</span>
+                    </div>
+                    <img class="bg-[#F78C9C]" src="images/cupon-devider.png" alt="">
+                    <div class="bg-[#F78C9C] text-center rounded-r-3xl px-8 py-16"> <span
+                            class="text-2xl font-bold">Couple 20</span> <br>
+                        <span>Coupon Code</span>
+                    </div>
+                </div>
+            </div>
+
+            <button class="text-[#1DD100] border-2 border-[#1DD100] rounded-xl p-3">See All Offers</button>
+        </section>
+        <!-- Desh Poribahon -->
+        <section class="mt-28 font-raleway font-inter  bg-[#F7F8F8] border-2 border-t-[#1DD100] rounded-t-3xl">
+            <h1 class="mb-5 mt-16 text-3xl font-bold text-center">Desh Paribahan</h1>
+            <p class="mb-5 text-center">Yes, you can run unit tests and view the results directly within the app. The
+                integrated
+                <br>
+                testing features allow for a streamlined .
+            </p>
+            <div class="flex mr-24 ml-24 mb-24 w-full">
+                <div class=" bg-white p-8 rounded-l-3xl ">
+                    <div class="flex gap-44">
+                        <div class="flex">
+                            <div>
+                                <img src="images/bus-logo.png" alt="">
+                            </div>
+                            <div>
+                                <h4 class="text-2xl font-bold">Greenline Paribahan</h4>
+                                <p>Coach-009-WEB ! AC_Business</p>
+                            </div>
+                        </div>
+                        <div>
+                            <a class="btn text-[#1DD100] w-2/8"><img src="images/seat-green.png" alt=""><span>40 Seats
+                                    left</span></a>
+                        </div>
+                    </div>
+                </div>
+                <img class="bg-white" src="images/info-devider.png" alt="">
+                <div class=" text-center p-14  bg-white rounded-r-3xl">
+                    <img class="mb-5 " src="images/fare.png" alt="">
+                    <h3 class="mb-5 text-2xl font-bold">550 Taka</h3>
+                    <p>Per Seat</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
