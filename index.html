@@ -115,8 +115,8 @@
                             </div>
                             <div>
                                 <a class="btn bg-[#1DD10026] text-[#1DD100] w-2/8"><img src="images/seat-green.png"
-                                        alt=""><span>40 Seats
-                                        left</span></a>
+                                        alt=""><span id="seat-left">40</span>Seats
+                                    left</a>
                             </div>
                         </div>
                         <div class="mt-5 bg-[#F7F8F8] rounded-2xl p-5">
@@ -199,7 +199,8 @@
                         <line id="Line 2" x1="0.000000" y1="0.500000" x2="609.000000" y2="0.500000" stroke="#030712"
                             stroke-opacity="0.200000" stroke-width="1.000000" stroke-dasharray="5.000000,5.000000" />
                     </svg>
-                    <button class="my-5 bg-[#0307121A] px-8 py-2 rounded-2xl button-end"><svg width="26.000000"
+                    <button class="my-5 bg-[#0307121A] px-8 py-2 rounded-2xl button-end">
+                        <svg width="26.000000"
                             height="26.000000" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
                             <desc>
@@ -207,7 +208,9 @@
                             </desc>
                             <defs />
                             <path id="Vector"
-                                d="M1.91333 17.5922C2.5166 19.0481 3.40039 20.371 4.51465 21.4853C5.62891 22.5996 6.9519 23.4835 8.40771 24.0865C9.86377 24.6896 11.4241 25 13 25C14.5759 25 16.1362 24.6896 17.5923 24.0865C19.0481 23.4835 20.3711 22.5996 21.4854 21.4853C22.5996 20.371 23.4834 19.0481 24.0867 17.5922C24.6897 16.1363 25 14.5759 25 13C25 11.4241 24.6897 9.86371 24.0867 8.40781C23.4834 6.9519 22.5996 5.62903 21.4854 4.51471C20.3711 3.40042 19.0481 2.51651 17.5923 1.91345C16.1362 1.31039 14.5759 1 13 1C11.4241 1 9.86377 1.31039 8.40771 1.91345C6.9519 2.51651 5.62891 3.40042 4.51465 4.51471C3.40039 5.62903 2.5166 6.9519 1.91333 8.40781C1.3103 9.86371 1 11.4241 1 13C1 14.5759 1.3103 16.1363 1.91333 17.5922ZM11.1145 14.8856C11.6145 15.3857 12.2927 15.6667 13 15.6667C13.7073 15.6667 14.3855 15.3857 14.8855 14.8856C15.3857 14.3855 15.6667 13.7072 15.6667 13C15.6667 12.2928 15.3857 11.6145 14.8855 11.1144C14.3855 10.6143 13.7073 10.3333 13 10.3333C12.2927 10.3333 11.6145 10.6143 11.1145 11.1144C10.6143 11.6145 10.3333 12.2928 10.3333 13C10.3333 13.7072 10.6143 14.3855 11.1145 14.8856ZM13 15.6667L13 25M10.3333 13L1.33325 10.3333M15.6667 13L24.6667 10.3333"
+                                d="M1.91333 17.5922C2.5166 19.0481 3.40039 20.371 4.51465 21.4853C5.62891 22.5996 6.9519 23.4835 8.40771 24.0865C9.86377 24.6896 11.4241 25 13 25C14.5759 25 16.1362 24.6896 17.5923 24.0865C19.0481 23.4835 20.3711 22.5996 21.4854 21.4853C22.5996 20.371 23.4834 19.0481 24.0867 17.5922C24.6897 16.1363 25 14.5759 25 13C25 11.4241
+                                 24.6897 9.86371 24.0867 8.40781C23.4834 6.9519 22.5996 5.62903 21.4854 4.51471C20.3711 3.40042 19.0481 2.51651 17.5923 1.91345C16.1362 1.31039 14.5759 1 13 1C11.4241 1 9.86377 1.31039 8.40771 1.91345C6.9519 2.51651 5.62891 3.40042 4.51465 4.51471C3.40039 5.62903 2.5166 6.9519 1.91333 8.40781C1.3103 9.86371 1 11.4241 1 13C1 14.5759 1.3103 16.1363 1.91333 17.5922ZM11.1145 14.8856C11.6145 15.3857 12.2927 15.6667 13 15.6667C13.7073 15.6667 14.3855 15.3857 14.8855 14.8856C15.3857 14.3855 15.6667
+                                 13.7072 15.6667 13C15.6667 12.2928 15.3857 11.6145 14.8855 11.1144C14.3855 10.6143 13.7073 10.3333 13 10.3333C12.2927 10.3333 11.6145 10.6143 11.1145 11.1144C10.6143 11.6145 10.3333 12.2928 10.3333 13C10.3333 13.7072 10.6143 14.3855 11.1145 14.8856ZM13 15.6667L13 25M10.3333 13L1.33325 10.3333M15.6667 13L24.6667 10.3333"
                                 stroke="#030712" stroke-opacity="0.700000" stroke-width="2.000000"
                                 stroke-linejoin="round" stroke-linecap="round" />
                         </svg>
@@ -215,73 +218,73 @@
                     <div class="my-5 ">
                         <div class="mb-5 flex justify-between">
                             <button>A</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">A1</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">A2</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">A3</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">A4</button>
+                            <button id="A1" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">A1</button>
+                            <button id="A2" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">A2</button>
+                            <button id="A3" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">A3</button>
+                            <button id="A4" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">A4</button>
                         </div>
                         <div class="mb-5 flex justify-between">
                             <button>B</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">B1</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">B2</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">B3</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">B4</button>
+                            <button id="B1" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">B1</button>
+                            <button id="B2" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">B2</button>
+                            <button id="B3" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">B3</button>
+                            <button id="B4" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">B4</button>
                         </div>
                         <div class="mb-5 flex justify-between">
                             <button>C</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">C1</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">C2</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">C3</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">C4</button>
+                            <button id="C1" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">C1</button>
+                            <button id="C2" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">C2</button>
+                            <button id="C3" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">C3</button>
+                            <button id="C4" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">C4</button>
                         </div>
                         <div class="mb-5 flex justify-between">
                             <button>D</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">D1</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">D2</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">D3</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">D4</button>
+                            <button id="D1" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">D1</button>
+                            <button id="D2" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">D2</button>
+                            <button id="D3" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">D3</button>
+                            <button id="D4" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">D4</button>
                         </div>
                         <div class="mb-5 flex justify-between">
                             <button>E</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">E1</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">E2</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">E3</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">E4</button>
+                            <button id="E1" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">E1</button>
+                            <button id="E2" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">E2</button>
+                            <button id="E3" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">E3</button>
+                            <button id="E4" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">E4</button>
                         </div>
                         <div class="mb-5 flex justify-between">
                             <button>F</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">F1</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">F2</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">F3</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">F4</button>
+                            <button id="F1" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">F1</button>
+                            <button id="F2" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">F2</button>
+                            <button id="F3" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">F3</button>
+                            <button id="F4" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">F4</button>
                         </div>
                         <div class="mb-5 flex justify-between">
                             <button>G</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">G1</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">G2</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">G3</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">G4</button>
+                            <button id="G1" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">G1</button>
+                            <button id="G2" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">G2</button>
+                            <button id="G3" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">G3</button>
+                            <button id="G4" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">G4</button>
                         </div>
                         <div class="mb-5 flex justify-between">
                             <button>H</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">H1</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">H2</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">H3</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">H4</button>
+                            <button id="H1" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">H1</button>
+                            <button id="H2" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">H2</button>
+                            <button id="H3" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">H3</button>
+                            <button id="H4" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">H4</button>
                         </div>
                         <div class="mb-5 flex justify-between">
                             <button>I</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">I1</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">I2</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">I3</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">I4</button>
+                            <button id="I1" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">I1</button>
+                            <button id="I2" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">I2</button>
+                            <button id="I3" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">I3</button>
+                            <button id="I4" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">I4</button>
                         </div>
                         <div class="mb-5 flex justify-between">
                             <button>J</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">J1</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">J2</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">J3</button>
-                            <button class="bg-[#F7F8F8] px-8 py-2 rounded-xl">J4</button>
+                            <button id="J1" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">J1</button>
+                            <button id="J2" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">J2</button>
+                            <button id="J3" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">J3</button>
+                            <button id="J4" class="add-ticket bg-[#F7F8F8] px-8 py-2 rounded-xl">J4</button>
                         </div>
                     </div>
                 </div>
@@ -308,7 +311,10 @@
                     </svg>
                     <div class="my-5 bg-[#F7F8F8] rounded-2xl p-5 ">
                         <div class="mb-4 flex justify-between">
-                            <h5 class="text-lg font-bold">Seat</h5>
+                            <div class="flex">
+                                <h5 class="text-lg font-bold">Seat</h5>
+                                <h5 id="seat-count" class="text-white text-center p-1 bg-[#1DD100] rounded-xl">0</h5>
+                            </div>
                             <h5 class="text-lg font-bold">Class</h5>
                             <h5 class="text-lg font-bold">Price</h5>
                         </div>
@@ -322,43 +328,29 @@
                                 stroke-opacity="0.200000" stroke-width="1.000000"
                                 stroke-dasharray="5.000000,5.000000" />
                         </svg>
-                        <div class="mt-5 flex justify-between ">
-                            <p>C2</p>
-                            <p>Economoy</p>
-                            <p>550</p>
-                        </div>
-                        <div class="mt-5 mb-5 flex justify-between ">
-                            <p>C2</p>
-                            <p>Economoy</p>
-                            <p>550</p>
-                        </div>
-                        <svg width="369.000000" height="1.000000" viewBox="0 0 369 1" fill="none"
-                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <desc>
-                                Created with Pixso.
-                            </desc>
-                            <defs />
-                            <line id="Line 6" x1="0.000000" y1="0.500000" x2="369.000000" y2="0.500000" stroke="#030712"
-                                stroke-opacity="0.200000" stroke-width="1.000000" />
-                        </svg>
+
+                        <ul id="selected-seat-container">
+                            
+                        </ul>
+                        <hr>
                         <div class="mt-4 flex justify-between">
                             <p class="font-bold">Total Price</p>
-                            <p class="font-bold">BDT 1100</p>
+                            <p class="font-bold">BDT <span id="total-price">0</span></p>
                         </div>
                         <div class="my-5 bg-white p-3 rounded-xl flex justify-between">
-                            <p class="text-[#03071266]">Have any copupon?</p>
-                            <button class="text-white bg-[#1DD100] px-6 py-1 rounded-xl">Apply</button>
+                            <input id="coupon-code" class="p-2" type="text" placeholder="Have any coupon code?">
+                            <button onclick="updateGrandTotal('apply-btn')" id="apply-btn" class="text-white bg-[#1DD100] px-6 py-1 rounded-xl">Apply</button>
                         </div>
                         <div class="flex justify-between">
                             <p class="font-bold">Grand Total</p>
-                            <p class="font-bold">BDT 1100</p>
+                            <p class="font-bold">BDT <span id="grand-total">0</span></p>
                         </div>
                     </div>
                     <form action="">
                         <label for="" class="font-bold">Passenger Name*</label> <br>
                         <input type="text" placeholder="Enter your name" class="mb-5 border-2 rounded-xl w-full p-3">
                         <label for="" class="font-bold">Phone Number*</label> <br>
-                        <input type="phone-number" class="mb-5 border-2 rounded-xl w-full p-3"
+                        <input type="number" class="mb-5 border-2 rounded-xl w-full p-3"
                             placeholder="Enter your phone number">
                         <label for="" class="font-bold">Email ID</label> <br>
                         <input type="email" name="" id="" class="mb-5 border-2 rounded-xl w-full p-3"
@@ -372,6 +364,7 @@
                 </div>
             </div>
         </section>
+        <script src="scripts/bus-tickit.js"></script>
     </main>
     <footer class="bg-black">
         <div class="mx-24 pt-24 text-white">
@@ -381,24 +374,26 @@
             </div>
             <div class="mt-5 mb-5 flex justify-between">
                 <p>Bus-Ticket is a digital platform to make your <br> daily commuting better.</p>
-                <div class="flex">
+                <div class="flex border-2 rounded-xl p-2">
                     <img src="images/playstore.png" alt="">
-                    <button class="w-2/8">GIT IT ON <br> <span class="text-xl">Google Play</span></button>
+                    <button class="w-2/8 ">GIT IT ON <br> <span class="text-xl">Google Play</span></button>
                 </div>
             </div>
-            <svg width="1170.000000" height="1.500000" viewBox="0 0 1170 1.5" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg width="1170.000000" height="1.500000" viewBox="0 0 1170 1.5" fill="none"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <desc>
-                        Created with Pixso.
+                    Created with Pixso.
                 </desc>
-                <defs/>
-                <line id="Line 1" x1="1170.000000" y1="0.750000" x2="0.000000" y2="0.750000" stroke="#FFFFFF" stroke-opacity="0.300000" stroke-width="1.500000" stroke-dasharray="5.000000,5.000000"/>
+                <defs />
+                <line id="Line 1" x1="1170.000000" y1="0.750000" x2="0.000000" y2="0.750000" stroke="#FFFFFF"
+                    stroke-opacity="0.300000" stroke-width="1.500000" stroke-dasharray="5.000000,5.000000" />
             </svg>
             <div class=" mt-5 pb-24 flex justify-between">
                 <p>@all rights reserved, P-Ticket services limited.2024</p>
                 <p>Terms & condition</p>
                 <p>Return & refund policy</p>
                 <p>Privacy policy</p>
-            </div>            
+            </div>
         </div>
     </footer>
 </body>

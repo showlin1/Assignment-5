@@ -7,3 +7,8 @@
   .font-inter{
     font-family: 'Inter', sans-serif;
   }
+  .selected-seat{
+    display: flex;
+    padding: 8px;
+    gap: 110px;
+  }
